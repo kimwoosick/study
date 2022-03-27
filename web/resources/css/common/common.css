@@ -1,0 +1,217 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .bg-dark {
+    background-color: #111111 !important;
+}
+
+header .navbar {
+    padding: 16px 16px;
+}
+
+header .navbar .container {
+    max-width: 1240px;
+    width: 100%;
+}
+
+header .left-navbar-nav .nav-item.new:not(:last-child) {
+    position: relative;
+    margin-right: 72px;
+}
+
+header .left-navbar-nav .nav-item.new .new-icon {
+    position: absolute;
+    top: 50%;
+    right: -24px;
+    transform: translate(0, -60%);
+    width: 24px;
+    height: 24px;
+    background-color: var(--red);
+    border-radius: 50%;
+    display: flex;
+}
+
+header .left-navbar-nav .nav-item.new .new-icon span {
+    font-size: var(--font-14);
+    position: relative;
+    right: 1px;
+    font-weight: bold;
+    margin: auto;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: var(--font-16);
+    font-weight: bold;
+    line-height: var(--line-24);
+    cursor: pointer;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link.right-icon {
+    position: relative;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link.right-icon .rt-pos {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    border-radius: 10px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--red);
+}
+
+header .navbar .navbar-nav .nav-item .nav-link.right-icon:hover svg,
+header .navbar .navbar-nav .nav-item .nav-link.right-icon:hover path,
+header .navbar .navbar-nav .nav-item .nav-link.right-icon:hover circle,
+header .navbar .navbar-nav .nav-item .nav-link.right-icon:hover rect {
+    fill: var(--red);
+}
+
+header .navbar .navbar-nav .nav-item[data-type="divide"] {
+    position: relative;
+    margin-right: 44px;
+}
+
+header .navbar .navbar-nav .nav-item[data-type="divide"]::after {
+    content: "";
+    position: absolute;
+    right: -24px;
+    top: 50%;
+    transform: translate(0, -55%);
+    width: 1px;
+    height: 36px;
+    background-color: var(--gray-5e5e5e);
+}
+
+header .right-navbar-nav .nav-item:not(:last-child) {
+    margin-right: 14px;
+}
+
+header .left-navbar-nav .nav-item:first-child {
+    margin-left: 40px;
+}
+
+header .left-navbar-nav .nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+#footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+#footer.bg-dark {
+    background-color: var(--dark-low) !important;
+}
+
+#footer .footer-sub-logo {
+    background-color: var(--red);
+    border-radius: 4px;
+    display: inline-flex;
+    padding: 10px 8px;
+}
+
+#footer .footer-sub-logo img {
+    margin: auto;
+}
+
+#footer .logo-container .logo-text {
+    margin-top: 10px;
+    font-size: var(--font-16);
+    font-weight: bold;
+    line-height: var(--line-24);
+}
+
+#footer .info-container {
+    margin-top: 60px;
+}
+
+#footer .info-container ul.service-info {
+    color: var(--white);
+    padding-left: 0;
+}
+
+#footer .info-container ul.service-info li {
+    margin-bottom: 2px;
+    font-size: var(--font-14);
+    font-weight: 500;
+    line-height: var(--line-20);
+}
+
+#footer .menu-title {
+    display: inline-block;
+    font-size: var(--font-20);
+    font-weight: bold;
+    line-height: var(--line-28);
+    margin-bottom: 16px;
+}
+
+#footer .menu-list li > a {
+    color: var(--white);
+}
+
+#footer .menu-list li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+#footer .menu-list {
+    font-size: var(--font-14);
+    font-weight: 500;
+    line-height: var(--line-20);
+}
+
+#footer .menu-list li.btn-menu {
+    margin-top: 24px;
+}
+
+#footer .menu-list .btn-menu button {
+    font-size: var(--font-16);
+    font-weight: bold;
+    line-height: var(--line-24);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#sub-footer .horizontal-menu {
+    margin-bottom: 0;
+}
+
+#sub-footer .horizontal-menu li {
+    display: inline-block;
+    position: relative;
+}
+
+#sub-footer .horizontal-menu li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: var(--gray-aaaaaa);
+    height: 30%;
+    top: 48%;
+    right: -22px;
+    transform: translate(0, -50%);
+}
+
+#sub-footer .horizontal-menu li:not(:last-child) {
+    margin-right: 36px;
+}
+
+#sub-footer .horizontal-menu li > a {
+    padding: 20px 12px;
+    display: inline-block;
+    color: var(--gray-aaaaaa);
+    font-size: var(--font-16);
+    font-weight: 400;
+    line-height: var(--line-24);
+}
+
+.header-message-tab-overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(17, 17, 17, .6);
+    z-index: 10;
+    position: fixed;
+}

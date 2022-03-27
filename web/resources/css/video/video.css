@@ -1,0 +1,17 @@
+.video-container {
+    position: relative;
+}
+
+.video-js .vjs-big-play-button {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#my-video {
+    width: 100%;
+}
+
+.video-js .vjs-progress-control:hover .vjs-time-tooltip, .video-js .vjs-progress-control:hover .vjs-progress-holder:focus .vjs-time-tooltip{
+    white-space: nowrap;
+}

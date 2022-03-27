@@ -1,0 +1,2547 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+          crossorigin="anonymous">
+
+    <!-- Theme-->
+    <link rel="stylesheet"
+          href="../../../resources/css/theme/theme.css">
+
+    <!-- Element -->
+    <link rel="stylesheet"
+          href="../../../resources/css/element/element.css">
+
+    <!-- Animation -->
+    <link rel="stylesheet"
+          href="../../../resources/css/animation/animate.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet"
+          href="../../../resources/css/carousel/owl.carousel.css">
+
+    <!-- Common -->
+    <link rel="stylesheet"
+          href="../../../resources/css/common/common.css">
+
+    <title>Chat</title>
+</head>
+<body>
+<div class="container">
+    <h1>해당 섹션은 모달을 따로 둔 샘플입니다. 개발때 지워집니다.</h1>
+    <div class="row row-cols-3 mb-5">
+        <div class="col">
+            <button type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#exampleModal">
+                Chat Modal1
+            </button>
+        </div>
+        <div class="col">
+            <button type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#exampleModal1">
+                Chat Modal2
+            </button>
+        </div>
+        <div class="col">
+            <button type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#exampleModal4">
+                Chat Modal File 1
+            </button>
+        </div>
+        <div class="col">
+            <button type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#exampleModal5">
+                Chat Modal File 2
+            </button>
+        </div>
+        <div class="col">
+            <button type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#exampleModal6">
+                Chat Modal Request
+            </button>
+        </div>
+        <div class="col">
+            <button type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#exampleModal7">
+                Chat Modal Project Register
+            </button>
+        </div>
+    </div>
+    <div class="row chat-title">
+        메세지
+    </div>
+    <div class="row row-cols-1 chat-wrapper">
+        <div class="left-chat-list col-4">
+            <div class="left-chat-list-wrapper">
+                <div class="dropdown-wrapper">
+                    <div class="dropdown select-dropdown rotate">
+                        <button class="btn btn-md btn-select dropdown-toggle btn-block text-gray-d8 h-text-gray-d8 chat-toggle"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-toggle="dropdown"
+                                aria-expanded="false">
+                            전체 메시지
+                        </button>
+                        <div class="dropdown-menu animate slideIn"
+                             aria-labelledby="dropdownMenuButton1">
+                            <a class="dropdown-item active"
+                               href="javascript:void(0);">전체 메시지</a>
+                            <a class="dropdown-item"
+                               href="javascript:void(0);">안 읽은 메시지</a>
+                            <a class="dropdown-item"
+                               href="javascript:void(0);">중요 메시지</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-tab-wrapper">
+                    <nav>
+                        <div class="nav nav-tabs"
+                             id="chat-tab"
+                             role="tablist">
+                            <a class="nav-link active"
+                               id="nav-inquiry-tab"
+                               data-toggle="tab"
+                               href="#nav-inquiry"
+                               role="tab"
+                               aria-controls="nav-home"
+                               aria-selected="true">문의 메시지</a>
+                            <a class="nav-link"
+                               id="nav-project-tab"
+                               data-toggle="tab"
+                               href="#nav-project"
+                               role="tab"
+                               aria-controls="nav-profile"
+                               aria-selected="false">프로젝트 메시지</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content"
+                         id="chat-tabContent">
+                        <div class="tab-pane fade show active"
+                             id="nav-inquiry"
+                             role="tabpanel"
+                             aria-labelledby="nav-inquiry-tab">
+                            <div class="media-container">
+                                <div class="message-media message-type active">
+                                    <div class="media-profile-wrapper mb-auto">
+                                        <div class="rt-pos active"></div>
+                                        <img class="media-profile"
+                                             width="64"
+                                             height="64"
+                                             src="../../../resources/assets/images/sample/profile-sample-1.png">
+                                    </div>
+                                    <div class="media-info my-auto">
+                                        <div class="media-title">
+                                            <span class="title text-dark-low">오키위(okiwi)</span>
+                                            <span class="date text-dark-low ml-auto mb-auto mt-1">2022.03.10</span>
+                                        </div>
+                                        <div class="media-body ellipsis-multi text-gray-aa">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem
+                                            beatae
+                                            blanditiis culpa dicta enim hic, illum laboriosam mollitia neque nobis
+                                            officiis
+                                            possimus quas qui repellendus temporibus totam ullam unde!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message-media message-type">
+                                    <div class="media-profile-wrapper mb-auto">
+                                        <div class="rt-pos active"></div>
+                                        <img class="media-profile"
+                                             width="64"
+                                             height="64"
+                                             src="../../../resources/assets/images/sample/profile-sample-2.png">
+                                    </div>
+                                    <div class="media-info my-auto">
+                                        <div class="media-title">
+                                            <span class="title text-dark-low">오키위(okiwi)</span>
+                                            <span class="date text-dark-low ml-auto mb-auto mt-1">2022.03.10</span>
+                                        </div>
+                                        <div class="media-body ellipsis-multi text-gray-aa">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem
+                                            beatae
+                                            blanditiis culpa dicta enim hic, illum laboriosam mollitia neque nobis
+                                            officiis
+                                            possimus quas qui repellendus temporibus totam ullam unde!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message-media message-type">
+                                    <div class="media-profile-wrapper mb-auto">
+                                        <div class="rt-pos"></div>
+                                        <img class="media-profile"
+                                             width="64"
+                                             height="64"
+                                             src="../../../resources/assets/images/sample/profile-sample-3.png">
+                                    </div>
+                                    <div class="media-info my-auto">
+                                        <div class="media-title">
+                                            <span class="title text-dark-low">오키위(okiwi)</span>
+                                            <span class="date text-dark-low ml-auto mb-auto mt-1">2022.03.10</span>
+                                        </div>
+                                        <div class="media-body ellipsis-multi text-gray-aa">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem
+                                            beatae
+                                            blanditiis culpa dicta enim hic, illum laboriosam mollitia neque nobis
+                                            officiis
+                                            possimus quas qui repellendus temporibus totam ullam unde!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message-media message-type">
+                                    <div class="media-profile-wrapper mb-auto">
+                                        <div class="rt-pos"></div>
+                                        <img class="media-profile"
+                                             width="64"
+                                             height="64"
+                                             src="../../../resources/assets/images/sample/profile-sample-4.png">
+                                    </div>
+                                    <div class="media-info my-auto">
+                                        <div class="media-title">
+                                            <span class="title text-dark-low">오키위(okiwi)</span>
+                                            <span class="date text-dark-low ml-auto mb-auto mt-1">2022.03.10</span>
+                                        </div>
+                                        <div class="media-body ellipsis-multi text-gray-aa">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem
+                                            beatae
+                                            blanditiis culpa dicta enim hic, illum laboriosam mollitia neque nobis
+                                            officiis
+                                            possimus quas qui repellendus temporibus totam ullam unde!
+                                            <div class="rt-pos bg-red">
+                                                <span class="text-white">99+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message-media message-type">
+                                    <div class="media-profile-wrapper mb-auto">
+                                        <div class="rt-pos"></div>
+                                        <img class="media-profile"
+                                             width="64"
+                                             height="64"
+                                             src="../../../resources/assets/images/sample/profile-sample-1.png">
+                                    </div>
+                                    <div class="media-info my-auto">
+                                        <div class="media-title">
+                                            <span class="title text-dark-low">오키위(okiwi)</span>
+                                            <span class="date text-dark-low ml-auto mb-auto mt-1">2022.03.10</span>
+                                        </div>
+                                        <div class="media-body ellipsis-multi text-gray-aa">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem
+                                            beatae
+                                            blanditiis culpa dicta enim hic, illum laboriosam mollitia neque nobis
+                                            officiis
+                                            possimus quas qui repellendus temporibus totam ullam unde!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message-media message-type">
+                                    <div class="media-profile-wrapper mb-auto">
+                                        <div class="rt-pos"></div>
+                                        <img class="media-profile"
+                                             width="64"
+                                             height="64"
+                                             src="../../../resources/assets/images/sample/profile-sample-2.png">
+                                    </div>
+                                    <div class="media-info my-auto">
+                                        <div class="media-title">
+                                            <span class="title text-dark-low">오키위(okiwi)</span>
+                                            <span class="date text-dark-low ml-auto mb-auto mt-1">2022.03.10</span>
+                                        </div>
+                                        <div class="media-body ellipsis-multi text-gray-aa">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem
+                                            beatae
+                                            blanditiis culpa dicta enim hic, illum laboriosam mollitia neque nobis
+                                            officiis
+                                            possimus quas qui repellendus temporibus totam ullam unde!
+                                            <div class="rt-pos bg-red">
+                                                <span class="text-white">99+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-list-bottom">
+                                <div class="message-media message-type">
+                                    <div class="media-profile-wrapper mb-auto">
+                                        <img class="media-profile"
+                                             width="64"
+                                             height="64"
+                                             src="../../../resources/assets/images/icon/logo/gugong-image.png">
+                                    </div>
+                                    <div class="media-info my-auto">
+                                        <div class="media-title">
+                                            <span class="title text-dark-low">구공이</span>
+                                        </div>
+                                        <div class="media-body ellipsis-multi text-red">
+                                            *궁금하신 점을 구공이에게 물어보세요.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade"
+                             id="nav-project"
+                             role="tabpanel"
+                             aria-labelledby="nav-project-tab">
+                            <div class="media-container media-project-type">
+                                <div class="message-media message-type active">
+                                    <div class="media-title">
+                                        <span class="title text-dark-low">천명 신년운세 앱 서비스 홍보 영상</span>
+                                        <div class="lt-pos"></div>
+                                    </div>
+                                    <div class="mb-auto media-body-wrapper">
+                                        <div class="media-profile-wrapper mb-auto">
+                                            <img class="media-profile"
+                                                 data-user-name="kimwoosik"
+                                                 width="64"
+                                                 height="64"
+                                                 src="../../../resources/assets/images/sample/profile-sample-1.png">
+                                        </div>
+                                        <div class="media-info my-auto">
+                                            <div class="media-body ellipsis-multi text-gray-aa">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                                                autem
+                                                beatae
+                                                blanditiis culpa dicta enim hic, illum laboriosam mollitia neque
+                                                nobis
+                                                officiis
+                                                possimus quas qui repellendus temporibus totam ullam unde!
+                                            </div>
+                                            <span class="date text-gray-aa ml-auto mb-auto mt-1">2022.03.10</span>
+                                            <div class="rt-pos bg-red">
+                                                <span class="text-white">99+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message-media message-type">
+                                    <div class="media-title">
+                                        <span class="title text-dark-low">천명 신년운세 앱 서비스 홍보 영상</span>
+                                        <div class="lt-pos active"></div>
+                                    </div>
+                                    <div class="mb-auto media-body-wrapper">
+                                        <div class="media-profile-wrapper double mb-auto">
+                                            <img data-user-name="kimwoosik"
+                                                 class="media-profile"
+                                                 width="64"
+                                                 height="64"
+                                                 src="../../../resources/assets/images/sample/profile-sample-2.png">
+                                            <img data-user-name="kimwoosik"
+                                                 class="media-profile"
+                                                 width="64"
+                                                 height="64"
+                                                 src="../../../resources/assets/images/sample/profile-sample-3.png">
+                                        </div>
+                                        <div class="media-info my-auto">
+                                            <div class="media-body ellipsis-multi text-gray-aa">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                                                autem
+                                                beatae
+                                                blanditiis culpa dicta enim hic, illum laboriosam mollitia neque
+                                                nobis
+                                                officiis
+                                                possimus quas qui repellendus temporibus totam ullam unde!
+                                            </div>
+                                            <span class="date text-gray-aa ml-auto mb-auto mt-1">2022.03.10</span>
+                                            <div class="rt-pos bg-red">
+                                                <span class="text-white">99+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message-media message-type">
+                                    <div class="media-title">
+                                        <span class="title text-dark-low">천명 신년운세 앱 서비스 홍보 영상</span>
+                                        <div class="lt-pos active"></div>
+                                    </div>
+                                    <div class="mb-auto media-body-wrapper">
+                                        <div class="media-profile-wrapper triple mb-auto">
+                                            <img data-user-name="kimwoosik"
+                                                 class="media-profile"
+                                                 width="64"
+                                                 height="64"
+                                                 src="../../../resources/assets/images/sample/profile-sample-1.png">
+                                            <img data-user-name="kimwoosik"
+                                                 class="media-profile"
+                                                 width="64"
+                                                 height="64"
+                                                 src="../../../resources/assets/images/sample/profile-sample-2.png">
+                                            <img data-user-name="kimwoosik"
+                                                 class="media-profile"
+                                                 width="64"
+                                                 height="64"
+                                                 src="../../../resources/assets/images/sample/profile-sample-3.png">
+                                            <img data-user-name="kimwoosik"
+                                                 class="media-profile"
+                                                 width="64"
+                                                 height="64"
+                                                 src="../../../resources/assets/images/sample/profile-sample-4.png">
+                                        </div>
+                                        <div class="media-info my-auto">
+                                            <div class="media-body ellipsis-multi text-gray-aa">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                                                autem
+                                                beatae
+                                                blanditiis culpa dicta enim hic, illum laboriosam mollitia neque
+                                                nobis
+                                                officiis
+                                                possimus quas qui repellendus temporibus totam ullam unde!
+                                            </div>
+                                            <span class="date text-gray-aa ml-auto mb-auto mt-1">2022.03.10</span>
+                                            <div class="rt-pos bg-red">
+                                                <span class="text-white">99+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message-media message-type">
+                                    <div class="media-title">
+                                        <span class="title text-dark-low">천명 신년운세 앱 서비스 홍보 영상</span>
+                                        <div class="lt-pos active"></div>
+                                    </div>
+                                    <div class="mb-auto media-body-wrapper">
+                                        <div class="media-profile-wrapper multiple mb-auto">
+                                            <img data-user-name="kimwoosik"
+                                                 class="media-profile"
+                                                 width="64"
+                                                 height="64"
+                                                 src="../../../resources/assets/images/sample/profile-sample-1.png">
+                                            <img data-user-name="kimwoosik"
+                                                 class="media-profile"
+                                                 width="64"
+                                                 height="64"
+                                                 src="../../../resources/assets/images/sample/profile-sample-2.png">
+                                            <img data-user-name="kimwoosik"
+                                                 class="media-profile"
+                                                 width="64"
+                                                 height="64"
+                                                 src="../../../resources/assets/images/sample/profile-sample-3.png">
+                                            <svg class="media-profile"
+                                                 width="24"
+                                                 height="24"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.5 10.5C3.675 10.5 3 11.175 3 12C3 12.825 3.675 13.5 4.5 13.5C5.325 13.5 6 12.825 6 12C6 11.175 5.325 10.5 4.5 10.5ZM19.5 10.5C18.675 10.5 18 11.175 18 12C18 12.825 18.675 13.5 19.5 13.5C20.325 13.5 21 12.825 21 12C21 11.175 20.325 10.5 19.5 10.5ZM12 10.5C11.175 10.5 10.5 11.175 10.5 12C10.5 12.825 11.175 13.5 12 13.5C12.825 13.5 13.5 12.825 13.5 12C13.5 11.175 12.825 10.5 12 10.5Z"
+                                                      fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <div class="media-info my-auto">
+                                            <div class="media-body ellipsis-multi text-gray-aa">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                                                autem
+                                                beatae
+                                                blanditiis culpa dicta enim hic, illum laboriosam mollitia neque
+                                                nobis
+                                                officiis
+                                                possimus quas qui repellendus temporibus totam ullam unde!
+                                            </div>
+                                            <span class="date text-gray-aa ml-auto mb-auto mt-1">2022.03.10</span>
+                                            <div class="rt-pos bg-red">
+                                                <span class="text-white">99+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-list-bottom">
+                                <div class="message-media message-type">
+                                    <div class="media-profile-wrapper mb-auto">
+                                        <img class="media-profile"
+                                             width="64"
+                                             height="64"
+                                             src="../../../resources/assets/images/icon/logo/gugong-image.png">
+                                    </div>
+                                    <div class="media-info my-auto">
+                                        <div class="media-title">
+                                            <span class="title text-dark-low">구공이</span>
+                                        </div>
+                                        <div class="media-body ellipsis-multi text-red">
+                                            *궁금하신 점을 구공이에게 물어보세요.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-profile-wrapper"
+                     style="z-index: -1;">
+                    <div class="empty">
+                        <div class="spinner-border"
+                             role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="rt-pos">
+                        <svg width="24"
+                             height="24"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.828 11.0007H20V13.0007H7.828L13.192 18.3647L11.778 19.7787L4 12.0007L11.778 4.22266L13.192 5.63666L7.828 11.0007Z"
+                                  fill="black"/>
+                        </svg>
+                    </div>
+                    <div class="creator-item">
+                        <div class="card creator-card h-100">
+                            <div class="card-img-top-icon bg-img"
+                                 style="background-image: url('../../../resources/assets/images/sample/profile-sample-1.png')">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    오키위
+                                </div>
+                                <div class="card-subtitle">
+                                    종합 제작사(기업)
+                                </div>
+                                <div class="media-info">
+                                    <span class="info">종합 제작사(기업)</span>
+                                    <span class="info">인원 6인</span>
+                                </div>
+                                <div class="hashs text-left"> <!--3개 이하 center (기본 옵션), 4개 이상 text-left-->
+                                    <span class="hash border-1 bg-gray-op-f2 text-dark-low">Lorem</span>
+                                    <span class="hash border-1 bg-gray-op-f2 text-dark-low">Lorem</span>
+                                    <span class="hash border-1 bg-gray-op-f2 text-dark-low">Lorem</span>
+                                    <span class="hash border-1 bg-gray-op-f2 text-dark-low">Lorem</span>
+                                    <span class="hash border-1 bg-gray-op-f2 text-dark-low">Lorem</span>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="desc-wrapper">
+                                    <div class="title text-dark-low">
+                                        간단 소개
+                                    </div>
+                                    <div class="desc text-dark-low">
+                                        형자사는 기업 지분 및 수익구조가 안정적이며, 해당 업계에서 탄탄한 신뢰도를 쌓아왔습니다.
+                                        기업 성장성 및 임직원들의 재직만족도 역시 높은 기업임에도 불구하고 자사의 인지도가 일반
+                                        취준생들에게는 약하여 신규 인재채용 성과가 아쉬웠습니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <button type="button"
+                                class="btn btn-sm btn-op-red bold">프로필 확인하기
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-chat-content col-8">
+            <div class="chat-options-wrapper dropdown">
+                <a id="chat-options-link1"
+                   role="button"
+                   data-toggle="dropdown"
+                   aria-expanded="false"
+                   href="javascript:void(0);"
+                   class="chat-dots">
+                    <svg width="32"
+                         height="32"
+                         viewBox="0 0 32 32"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5614 15.9986C18.5614 14.5847 17.4153 13.4386 16.0014 13.4386C14.5876 13.4386 13.4414 14.5847 13.4414 15.9986C13.4414 17.4124 14.5876 18.5586 16.0014 18.5586C17.4153 18.5586 18.5614 17.4124 18.5614 15.9986Z"
+                              fill="#222222"></path>
+                        <path d="M18.5614 7.83843C18.5614 6.42458 17.4153 5.27843 16.0014 5.27843C14.5876 5.27843 13.4414 6.42458 13.4414 7.83843C13.4414 9.25228 14.5876 10.3984 16.0014 10.3984C17.4153 10.3984 18.5614 9.25228 18.5614 7.83843Z"
+                              fill="#222222"></path>
+                        <path d="M18.5614 24.1587C18.5614 22.7449 17.4153 21.5987 16.0014 21.5987C14.5876 21.5987 13.4414 22.7449 13.4414 24.1587C13.4414 25.5726 14.5876 26.7188 16.0014 26.7188C17.4153 26.7188 18.5614 25.5726 18.5614 24.1587Z"
+                              fill="#222222"></path>
+                    </svg>
+                </a>
+                <div class="chat-options dropdown-menu"
+                     aria-labelledby="chat-options-link1">
+                    <ul class="list-group">
+                        <li class="list-group-item">채팅방 나가기</li>
+                        <li class="list-group-item">신고하기</li>
+                        <li class="list-group-item">크리에이터 찜</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-chat-content-wrapper">
+                <!-- only text -->
+                <div class="chat-item">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-1.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="content">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+                                                 dignissimos dolores ea eligendi et eum ipsum optio rerum suscipit
+                                                 temporibus.
+                                </span>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+                <div class="chat-item self">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-1.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="content">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+                                                 dicta
+                                                 doloremque odit placeat possimus voluptatum? Molestiae, nihil
+                                                 reprehenderit. Consequuntur cupiditate dolore hic id labore nam
+                                                 necessitatibus officiis placeat sint velit.
+                                </span>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+
+                <!-- template : table data red button -->
+                <div class="chat-item">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-1.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="template">
+                            <div class="template-header">
+                                <img src="../../../resources/assets/images/icon/logo/gugong-image.png"
+                                     width="28"
+                                     height="28"
+                                     alt="gugong icon">
+                                <span class="title">작업 승인이 완료되었어요!</span>
+                            </div>
+                            <div class="template-body">
+                                <div class="title">
+                                    천명 신년운세 앱 서비스 홍보 영상
+                                </div>
+                                <div class="detail">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td>타입aaa</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        <tr>
+                                            <td>타입bbb</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        <tr>
+                                            <td>타입cc</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="template-footer">
+                                <div class="btn btn-red active">
+                                    업무 채팅방 이동
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+                <div class="chat-item self">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-1.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="template">
+                            <div class="template-header">
+                                <img src="../../../resources/assets/images/icon/logo/gugong-image.png"
+                                     width="28"
+                                     height="28"
+                                     alt="gugong icon">
+                                <span class="title">작업 승인이 완료되었어요!</span>
+                            </div>
+                            <div class="template-body">
+                                <div class="title">
+                                    천명 신년운세 앱 서비스 홍보 영상
+                                </div>
+                                <div class="detail">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td>타입aaa</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        <tr>
+                                            <td>타입bbb</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        <tr>
+                                            <td>타입cc</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="template-footer">
+                                <div class="btn btn-red active">
+                                    업무 채팅방 이동
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+
+                <!-- template : table data gray button -->
+                <div class="chat-item">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-1.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="template">
+                            <div class="template-header">
+                                <img src="../../../resources/assets/images/icon/logo/gugong-image.png"
+                                     width="28"
+                                     height="28"
+                                     alt="gugong icon">
+                                <span class="title">작업 승인이 완료되었어요!</span>
+                            </div>
+                            <div class="template-body">
+                                <div class="title">
+                                    천명 신년운세 앱 서비스 홍보 영상
+                                </div>
+                                <div class="detail">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td>타입aaa</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        <tr>
+                                            <td>타입bbb</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        <tr>
+                                            <td>타입cc</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="template-footer">
+                                <div class="btn btn-gray-white non-active">
+                                    수락 요청 대기중
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+                <div class="chat-item self">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-1.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="template">
+                            <div class="template-header">
+                                <img src="../../../resources/assets/images/icon/logo/gugong-image.png"
+                                     width="28"
+                                     height="28"
+                                     alt="gugong icon">
+                                <span class="title">작업 승인이 완료되었어요!</span>
+                            </div>
+                            <div class="template-body">
+                                <div class="title">
+                                    천명 신년운세 앱 서비스 홍보 영상
+                                </div>
+                                <div class="detail">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td>타입aaa</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        <tr>
+                                            <td>타입bbb</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        <tr>
+                                            <td>타입cc</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="template-footer">
+                                <div class="btn btn-gray-white non-active">
+                                    수락 요청 대기중
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+
+                <!-- template : table data gray&red button -->
+                <div class="chat-item">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-1.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="template">
+                            <div class="template-header">
+                                <img src="../../../resources/assets/images/icon/logo/gugong-image.png"
+                                     width="28"
+                                     height="28"
+                                     alt="gugong icon">
+                                <span class="title">작업 승인이 완료되었어요!</span>
+                            </div>
+                            <div class="template-body">
+                                <div class="title">
+                                    천명 신년운세 앱 서비스 홍보 영상
+                                </div>
+                                <div class="detail">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td>타입aaa</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        <tr>
+                                            <td>타입bbb</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        <tr>
+                                            <td>타입cc</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="template-footer">
+                                <div class="btn btn-gray-white non-active">
+                                    수락 요청 대기중
+                                </div>
+                                <div class="btn btn-red">
+                                    수락 요청 대기중
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+                <div class="chat-item self">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-1.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="template">
+                            <div class="template-header">
+                                <img src="../../../resources/assets/images/icon/logo/gugong-image.png"
+                                     width="28"
+                                     height="28"
+                                     alt="gugong icon">
+                                <span class="title">작업 승인이 완료되었어요!</span>
+                            </div>
+                            <div class="template-body">
+                                <div class="title">
+                                    천명 신년운세 앱 서비스 홍보 영상
+                                </div>
+                                <div class="detail">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td>타입aaa</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        <tr>
+                                            <td>타입bbb</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        <tr>
+                                            <td>타입cc</td>
+                                            <td>데이터</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="template-footer">
+                                <div class="btn btn-gray-white non-active">
+                                    수락 요청 대기중
+                                </div>
+                                <div class="btn btn-red">
+                                    수락 요청 대기중
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+
+                <!-- file message -->
+                <div class="chat-item">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-4.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="content">
+                            <div class="file-item">
+                                <img class="thumbnail"
+                                     src="https://via.placeholder.com/45x70"
+                                     alt="file thumbnail">
+                                <div class="file-content-area">
+                                    <div class="file-content">
+                                        <div class="file-desc">
+                                            <div class="name-group">
+                                                <span class="name">시안1차</span>
+                                                <span class="extension">.mp4</span>
+                                            </div>
+                                            <span class="size">200MB/400MB</span>
+                                        </div>
+                                        <div class="download">
+                                            <div class="icon">
+                                                <svg width="18"
+                                                     height="18"
+                                                     viewBox="0 0 18 18"
+                                                     fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1158_7030)">
+                                                        <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                              fill="#ED234B"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_1158_7030">
+                                                            <rect width="17.7778"
+                                                                  height="17.7778"
+                                                                  fill="white"
+                                                                  transform="translate(0.109375 0.109375)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <img class="thumbnail"
+                                     src="https://via.placeholder.com/45x70"
+                                     alt="file thumbnail">
+                                <div class="file-content-area">
+                                    <div class="file-content">
+                                        <div class="file-desc">
+                                            <div class="name-group">
+                                                <span class="name">시안1차_긴이름테스트</span>
+                                                <span class="extension">.mp4</span>
+                                            </div>
+                                            <span class="size">200MB/400MB</span>
+                                        </div>
+                                        <div class="download">
+                                            <div class="icon">
+                                                <svg width="18"
+                                                     height="18"
+                                                     viewBox="0 0 18 18"
+                                                     fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1158_7030)">
+                                                        <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                              fill="#ED234B"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_1158_7030">
+                                                            <rect width="17.7778"
+                                                                  height="17.7778"
+                                                                  fill="white"
+                                                                  transform="translate(0.109375 0.109375)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+                <div class="chat-item self">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-2.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="content">
+                            <div class="file-item">
+                                <img class="thumbnail"
+                                     src="https://via.placeholder.com/45x70"
+                                     alt="file thumbnail">
+                                <div class="file-content-area">
+                                    <div class="file-content">
+                                        <div class="file-desc">
+                                            <div class="name-group">
+                                                <span class="name">시안1차</span>
+                                                <span class="extension">.mp4</span>
+                                            </div>
+                                            <span class="size">200MB/400MB</span>
+                                        </div>
+                                        <div class="download">
+                                            <div class="icon">
+                                                <svg width="18"
+                                                     height="18"
+                                                     viewBox="0 0 18 18"
+                                                     fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1158_7030)">
+                                                        <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                              fill="#ED234B"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_1158_7030">
+                                                            <rect width="17.7778"
+                                                                  height="17.7778"
+                                                                  fill="white"
+                                                                  transform="translate(0.109375 0.109375)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <img class="thumbnail"
+                                     src="https://via.placeholder.com/45x70"
+                                     alt="file thumbnail">
+                                <div class="file-content-area">
+                                    <div class="file-content">
+                                        <div class="file-desc">
+                                            <div class="name-group">
+                                                <span class="name">시안1차_긴이름테스트</span>
+                                                <span class="extension">.mp4</span>
+                                            </div>
+                                            <span class="size">200MB/400MB</span>
+                                        </div>
+                                        <div class="download">
+                                            <div class="icon">
+                                                <svg width="18"
+                                                     height="18"
+                                                     viewBox="0 0 18 18"
+                                                     fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1158_7030)">
+                                                        <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                              fill="#ED234B"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_1158_7030">
+                                                            <rect width="17.7778"
+                                                                  height="17.7778"
+                                                                  fill="white"
+                                                                  transform="translate(0.109375 0.109375)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="upload-progress-wrapper">
+                                        <progress value="50"
+                                                  max="100"></progress>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <img class="thumbnail"
+                                     src="https://via.placeholder.com/45x70"
+                                     alt="file thumbnail">
+                                <div class="file-content-area">
+                                    <div class="file-content">
+                                        <div class="file-desc">
+                                            <div class="name-group">
+                                                <span class="name">시안1차</span>
+                                                <span class="extension">.mp4</span>
+                                            </div>
+                                            <span class="size">200MB/400MB</span>
+                                        </div>
+                                        <div class="download">
+                                            <div class="icon">
+                                                <svg width="18"
+                                                     height="18"
+                                                     viewBox="0 0 18 18"
+                                                     fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1158_7030)">
+                                                        <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                              fill="#ED234B"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_1158_7030">
+                                                            <rect width="17.7778"
+                                                                  height="17.7778"
+                                                                  fill="white"
+                                                                  transform="translate(0.109375 0.109375)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="upload-progress-wrapper">
+                                        <span class="complete-text">파일 전송 완료</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+
+                <!-- file & text message -->
+                <div class="chat-item">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-3.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="content">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+                                dignissimos dolores ea eligendi et eum ipsum optio rerum suscipit
+                                temporibus.
+                                </span>
+                            <div class="file-item">
+                                <img class="thumbnail"
+                                     src="https://via.placeholder.com/45x70"
+                                     alt="file thumbnail">
+                                <div class="file-content-area">
+                                    <div class="file-content">
+                                        <div class="file-desc">
+                                            <div class="name-group">
+                                                <span class="name">시안1차</span>
+                                                <span class="extension">.mp4</span>
+                                            </div>
+                                            <span class="size">200MB/400MB</span>
+                                        </div>
+                                        <div class="download">
+                                            <div class="icon">
+                                                <svg width="18"
+                                                     height="18"
+                                                     viewBox="0 0 18 18"
+                                                     fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1158_7030)">
+                                                        <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                              fill="#ED234B"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_1158_7030">
+                                                            <rect width="17.7778"
+                                                                  height="17.7778"
+                                                                  fill="white"
+                                                                  transform="translate(0.109375 0.109375)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <img class="thumbnail"
+                                     src="https://via.placeholder.com/45x70"
+                                     alt="file thumbnail">
+                                <div class="file-content-area">
+                                    <div class="file-content">
+                                        <div class="file-desc">
+                                            <div class="name-group">
+                                                <span class="name">시안1차_긴이름테스트</span>
+                                                <span class="extension">.mp4</span>
+                                            </div>
+                                            <span class="size">200MB/400MB</span>
+                                        </div>
+                                        <div class="download">
+                                            <div class="icon">
+                                                <svg width="18"
+                                                     height="18"
+                                                     viewBox="0 0 18 18"
+                                                     fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1158_7030)">
+                                                        <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                              fill="#ED234B"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_1158_7030">
+                                                            <rect width="17.7778"
+                                                                  height="17.7778"
+                                                                  fill="white"
+                                                                  transform="translate(0.109375 0.109375)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+                <div class="chat-item self">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-2.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="content">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+                                dicta
+                                doloremque odit placeat possimus voluptatum? Molestiae, nihil
+                                reprehenderit. Consequuntur cupiditate dolore hic id labore nam
+                                necessitatibus officiis placeat sint velit.
+                                </span>
+                            <div class="file-item">
+                                <img class="thumbnail"
+                                     src="https://via.placeholder.com/45x70"
+                                     alt="file thumbnail">
+                                <div class="file-content-area">
+                                    <div class="file-content">
+                                        <div class="file-desc">
+                                            <div class="name-group">
+                                                <span class="name">시안1차</span>
+                                                <span class="extension">.mp4</span>
+                                            </div>
+                                            <span class="size">200MB/400MB</span>
+                                        </div>
+                                        <div class="download">
+                                            <div class="icon">
+                                                <svg width="18"
+                                                     height="18"
+                                                     viewBox="0 0 18 18"
+                                                     fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1158_7030)">
+                                                        <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                              fill="#ED234B"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_1158_7030">
+                                                            <rect width="17.7778"
+                                                                  height="17.7778"
+                                                                  fill="white"
+                                                                  transform="translate(0.109375 0.109375)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <img class="thumbnail"
+                                     src="https://via.placeholder.com/45x70"
+                                     alt="file thumbnail">
+                                <div class="file-content-area">
+                                    <div class="file-content">
+                                        <div class="file-desc">
+                                            <div class="name-group">
+                                                <span class="name">시안1차_긴이름테스트</span>
+                                                <span class="extension">.mp4</span>
+                                            </div>
+                                            <span class="size">200MB/400MB</span>
+                                        </div>
+                                        <div class="download">
+                                            <div class="icon">
+                                                <svg width="18"
+                                                     height="18"
+                                                     viewBox="0 0 18 18"
+                                                     fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1158_7030)">
+                                                        <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                              fill="#ED234B"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_1158_7030">
+                                                            <rect width="17.7778"
+                                                                  height="17.7778"
+                                                                  fill="white"
+                                                                  transform="translate(0.109375 0.109375)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="upload-progress-wrapper">
+                                        <progress value="50"
+                                                  max="100"></progress>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <img class="thumbnail"
+                                     src="https://via.placeholder.com/45x70"
+                                     alt="file thumbnail">
+                                <div class="file-content-area">
+                                    <div class="file-content">
+                                        <div class="file-desc">
+                                            <div class="name-group">
+                                                <span class="name">시안1차</span>
+                                                <span class="extension">.mp4</span>
+                                            </div>
+                                            <span class="size">200MB/400MB</span>
+                                        </div>
+                                        <div class="download">
+                                            <div class="icon">
+                                                <svg width="18"
+                                                     height="18"
+                                                     viewBox="0 0 18 18"
+                                                     fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1158_7030)">
+                                                        <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                              fill="#ED234B"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_1158_7030">
+                                                            <rect width="17.7778"
+                                                                  height="17.7778"
+                                                                  fill="white"
+                                                                  transform="translate(0.109375 0.109375)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="upload-progress-wrapper">
+                                        <span class="complete-text">파일 전송 완료</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+
+                <!-- template: with file -->
+                <div class="chat-item">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-1.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="template">
+                            <div class="template-header">
+                                <img src="../../../resources/assets/images/icon/logo/gugong-image.png"
+                                     width="28"
+                                     height="28"
+                                     alt="gugong icon">
+                                <span class="title">결과물 승인 요청이 왔어요!</span>
+                            </div>
+                            <div class="template-body">
+                                <div class="content">
+                                        <span class="plain-text">
+                                            ‘유병준’ 님의 결과물을 확인하고 수정 요청
+                                        혹은 승인해주세요.
+                                        </span>
+                                    <div class="file-item">
+                                        <img class="thumbnail"
+                                             src="https://via.placeholder.com/45x70"
+                                             alt="file thumbnail">
+                                        <div class="file-content-area">
+                                            <div class="file-content">
+                                                <div class="file-desc">
+                                                    <div class="name-group">
+                                                        <span class="name">시안1차</span>
+                                                        <span class="extension">.mp4</span>
+                                                    </div>
+                                                    <span class="size">200MB/400MB</span>
+                                                </div>
+                                                <div class="download">
+                                                    <div class="icon">
+                                                        <svg width="18"
+                                                             height="18"
+                                                             viewBox="0 0 18 18"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_1158_7030)">
+                                                                <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                                      fill="#ED234B"/>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_1158_7030">
+                                                                    <rect width="17.7778"
+                                                                          height="17.7778"
+                                                                          fill="white"
+                                                                          transform="translate(0.109375 0.109375)"/>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="file-item">
+                                        <img class="thumbnail"
+                                             src="https://via.placeholder.com/45x70"
+                                             alt="file thumbnail">
+                                        <div class="file-content-area">
+                                            <div class="file-content">
+                                                <div class="file-desc">
+                                                    <div class="name-group">
+                                                        <span class="name">시안1차_긴이름테스트</span>
+                                                        <span class="extension">.mp4</span>
+                                                    </div>
+                                                    <span class="size">200MB/400MB</span>
+                                                </div>
+                                                <div class="download">
+                                                    <div class="icon">
+                                                        <svg width="18"
+                                                             height="18"
+                                                             viewBox="0 0 18 18"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_1158_7030)">
+                                                                <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                                      fill="#ED234B"/>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_1158_7030">
+                                                                    <rect width="17.7778"
+                                                                          height="17.7778"
+                                                                          fill="white"
+                                                                          transform="translate(0.109375 0.109375)"/>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="template-footer">
+                                <div class="btn btn-gray-white non-active">
+                                    수정 요청
+                                </div>
+                                <div class="btn btn-red">
+                                    결과물 승인
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+                <div class="chat-item self">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-3.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="template">
+                            <div class="template-header">
+                                <img src="../../../resources/assets/images/icon/logo/gugong-image.png"
+                                     width="28"
+                                     height="28"
+                                     alt="gugong icon">
+                                <span class="title">결과물 승인 요청했어요!</span>
+                            </div>
+                            <div class="template-body">
+                                <div class="content">
+                                        <span class="plain-text">
+                                            ‘의뢰인 명’ 님의 수정 요청 혹은 승인이 완료되어야 정산처리됩니다.
+                                        </span>
+                                    <div class="file-item">
+                                        <img class="thumbnail"
+                                             src="https://via.placeholder.com/45x70"
+                                             alt="file thumbnail">
+                                        <div class="file-content-area">
+                                            <div class="file-content">
+                                                <div class="file-desc">
+                                                    <div class="name-group">
+                                                        <span class="name">시안1차</span>
+                                                        <span class="extension">.mp4</span>
+                                                    </div>
+                                                    <span class="size">200MB/400MB</span>
+                                                </div>
+                                                <div class="download">
+                                                    <div class="icon">
+                                                        <svg width="18"
+                                                             height="18"
+                                                             viewBox="0 0 18 18"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_1158_7030)">
+                                                                <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                                      fill="#ED234B"/>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_1158_7030">
+                                                                    <rect width="17.7778"
+                                                                          height="17.7778"
+                                                                          fill="white"
+                                                                          transform="translate(0.109375 0.109375)"/>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="file-item">
+                                        <img class="thumbnail"
+                                             src="https://via.placeholder.com/45x70"
+                                             alt="file thumbnail">
+                                        <div class="file-content-area">
+                                            <div class="file-content">
+                                                <div class="file-desc">
+                                                    <div class="name-group">
+                                                        <span class="name">시안1차_긴이름테스트</span>
+                                                        <span class="extension">.mp4</span>
+                                                    </div>
+                                                    <span class="size">200MB/400MB</span>
+                                                </div>
+                                                <div class="download">
+                                                    <div class="icon">
+                                                        <svg width="18"
+                                                             height="18"
+                                                             viewBox="0 0 18 18"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_1158_7030)">
+                                                                <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                                      fill="#ED234B"/>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_1158_7030">
+                                                                    <rect width="17.7778"
+                                                                          height="17.7778"
+                                                                          fill="white"
+                                                                          transform="translate(0.109375 0.109375)"/>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="upload-progress-wrapper">
+                                                <progress value="50"
+                                                          max="100"></progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="file-item">
+                                        <img class="thumbnail"
+                                             src="https://via.placeholder.com/45x70"
+                                             alt="file thumbnail">
+                                        <div class="file-content-area">
+                                            <div class="file-content">
+                                                <div class="file-desc">
+                                                    <div class="name-group">
+                                                        <span class="name">시안1차</span>
+                                                        <span class="extension">.mp4</span>
+                                                    </div>
+                                                    <span class="size">200MB/400MB</span>
+                                                </div>
+                                                <div class="download">
+                                                    <div class="icon">
+                                                        <svg width="18"
+                                                             height="18"
+                                                             viewBox="0 0 18 18"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_1158_7030)">
+                                                                <path d="M2.33203 14.1849H15.6654V15.6664H2.33203V14.1849ZM9.73944 6.77749H14.9246L8.9987 12.7034L3.07277 6.77749H8.25796V0.851562H9.73944V6.77749Z"
+                                                                      fill="#ED234B"/>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_1158_7030">
+                                                                    <rect width="17.7778"
+                                                                          height="17.7778"
+                                                                          fill="white"
+                                                                          transform="translate(0.109375 0.109375)"/>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="upload-progress-wrapper">
+                                                <span class="complete-text">파일 전송 완료</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="template-footer">
+                                <div class="btn btn-gray-white non-active">
+                                    결과물 수정 불가
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+
+                <!-- template: only text -->
+                <div class="chat-item">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-2.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="template">
+                            <div class="template-header">
+                                <img src="../../../resources/assets/images/icon/logo/gugong-image.png"
+                                     width="28"
+                                     height="28"
+                                     alt="gugong icon">
+                                <span class="title">결과물을 승인했습니다!</span>
+                            </div>
+                            <div class="template-body">
+                                <div class="content">
+                                        <span class="plain-text">
+                                            잔금 정산 금액 : 190만원
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+                <div class="chat-item self">
+                    <div class="profile-image">
+                        <img src="../../../resources/assets/images/sample/profile-sample-4.png"
+                             width="42"
+                             height="42"
+                             alt="profile image">
+                    </div>
+                    <div class="body">
+                        <div class="name">이름</div>
+                        <div class="template">
+                            <div class="template-header">
+                                <img src="../../../resources/assets/images/icon/logo/gugong-image.png"
+                                     width="28"
+                                     height="28"
+                                     alt="gugong icon">
+                                <span class="title">결과물을 승인했습니다!</span>
+                            </div>
+                            <div class="template-body">
+                                <div class="content">
+                                        <span class="plain-text">
+                                            잔금 정산 금액 : 190만원
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        2022.03.14 15:12
+                    </div>
+                </div>
+            </div>
+            <div class="right-chat-bottom-wrapper">
+                <div class="form-group input-wrapper">
+                        <textarea onkeyup="javascript:void(0);"
+                                  class="form-control"
+                                  pattern="[a-z]{1,30}(,[a-z]{1,30})*"
+                                  placeholder="메시지를 입력하세요.(Shift+Enter: 줄바꿈, Enter:전송)"></textarea>
+                </div>
+                <div class="send-wrapper">
+                        <span class="upload-item my-auto">
+                            <svg width="20"
+                                 height="20"
+                                 viewBox="0 0 20 20"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.33464 15.8346H16.668V10.0013H18.3346V16.668C18.3346 16.889 18.2468 17.1009 18.0906 17.2572C17.9343 17.4135 17.7223 17.5013 17.5013 17.5013H2.5013C2.28029 17.5013 2.06833 17.4135 1.91205 17.2572C1.75577 17.1009 1.66797 16.889 1.66797 16.668V10.0013H3.33464V15.8346ZM11.668 7.5013V12.5013H8.33464V7.5013H4.16797L10.0013 1.66797L15.8346 7.5013H11.668Z"
+                                      fill="#222222"/>
+                            </svg>
+                            <span class="title text-dark-low my-auto">파일 첨부</span>
+                        </span>
+                    <span class="create-work my-auto">
+                            <svg width="20"
+                                 height="20"
+                                 viewBox="0 0 20 20"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 5.63214L15.8334 7.2988V3.33464H8.33335V7.5013H4.16669V16.668H15.8334V14.3705L17.5 12.7038V17.508C17.4998 17.7273 17.4125 17.9376 17.2574 18.0926C17.1022 18.2476 16.8918 18.3346 16.6725 18.3346H3.32752C3.21808 18.3339 3.10987 18.3116 3.00906 18.269C2.90825 18.2264 2.81681 18.1644 2.73997 18.0864C2.66313 18.0085 2.60239 17.9162 2.56122 17.8148C2.52005 17.7134 2.49925 17.6049 2.50002 17.4955V6.66797L7.50252 1.66797H16.665C17.125 1.66797 17.5 2.04714 17.5 2.49464V5.63214ZM18.1484 7.34047L19.3267 8.51964L12.845 15.0013L11.665 14.9996L11.6667 13.823L18.1484 7.3413V7.34047Z"
+                                      fill="#222222"/>
+                            </svg>
+                            <span class="title text-dark-low my-auto">작업 요청서</span>
+                        </span>
+                    <button type="button"
+                            disabled="disabled"
+                            class="btn btn-xs btn-red active my-auto ml-auto">전송
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chat Modal1 -->
+<div class="modal fade"
+     id="exampleModal"
+     tabindex="-1"
+     data-backdrop="static"
+     data-keyboard="false"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content radius-12">
+            <div class="modal-header">
+                <h5 class="modal-title"
+                    id="exampleModalLabel">작업 요청</h5>
+                <div class="modal-close"
+                     data-dismiss="modal"
+                     aria-label="Close">
+                    <svg class="m-auto"
+                         width="31"
+                         height="31"
+                         viewBox="0 0 31 31"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6058 13.8517L21.7466 7.71094L23.5007 9.46508L17.36 15.6058L23.5007 21.7466L21.7466 23.5007L15.6058 17.36L9.46508 23.5007L7.71094 21.7466L13.8517 15.6058L7.71094 9.46508L9.46508 7.71094L15.6058 13.8517Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-body work-request-wrapper">
+                <div class="request-item-wrapper">
+                    <div class="request-item">
+                        <div class="card request-card">
+                            <div class="request-media">
+                                <img class="media-profile my-auto"
+                                     width="48"
+                                     height="48"
+                                     src="https://via.placeholder.com/100x100">
+                                <div class="media-body my-auto">
+                                    <div class="rm-pos">
+                                        <label data-label="checkbox"
+                                               class="checkbox-item">
+                                            <input autocomplete="new-password" data-type="checkbox"
+                                                   type="checkbox"
+                                                   name="light">
+                                            <span class="checkbox"></span>
+                                            <span class="text ml-0"></span>
+                                        </label>
+                                    </div>
+                                    <div class="media-title">
+                                        <span class="title">천명 신년운세 앱 서비스 홍보 영상</span>
+                                        </span>
+                                    </div>
+                                    <div class="media-info">
+                                        <span class="info">기획</span>
+                                        <span class="info">250만원</span>
+                                        <span class="info">2021.12.11~2021.12.31</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request-item">
+                        <div class="card request-card">
+                            <div class="request-media">
+                                <img class="media-profile my-auto"
+                                     width="48"
+                                     height="48"
+                                     src="https://via.placeholder.com/100x100">
+                                <div class="media-body my-auto">
+                                    <div class="rm-pos">
+                                        <label data-label="checkbox"
+                                               class="checkbox-item">
+                                            <input autocomplete="new-password" data-type="checkbox"
+                                                   type="checkbox"
+                                                   name="light">
+                                            <span class="checkbox"></span>
+                                            <span class="text ml-0"></span>
+                                        </label>
+                                    </div>
+                                    <div class="media-title">
+                                        <span class="title">천명 신년운세 앱 서비스 홍보 영상</span>
+                                        </span>
+                                    </div>
+                                    <div class="media-info">
+                                        <span class="info">기획</span>
+                                        <span class="info">250만원</span>
+                                        <span class="info">2021.12.11~2021.12.31</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request-item">
+                        <div class="card request-card">
+                            <div class="request-media">
+                                <img class="media-profile my-auto"
+                                     width="48"
+                                     height="48"
+                                     src="https://via.placeholder.com/100x100">
+                                <div class="media-body my-auto">
+                                    <div class="rm-pos">
+                                        <label data-label="checkbox"
+                                               class="checkbox-item">
+                                            <input autocomplete="new-password" data-type="checkbox"
+                                                   type="checkbox"
+                                                   name="light">
+                                            <span class="checkbox"></span>
+                                            <span class="text ml-0"></span>
+                                        </label>
+                                    </div>
+                                    <div class="media-title">
+                                        <span class="title">천명 신년운세 앱 서비스 홍보 영상</span>
+                                        </span>
+                                    </div>
+                                    <div class="media-info">
+                                        <span class="info">기획</span>
+                                        <span class="info">250만원</span>
+                                        <span class="info">2021.12.11~2021.12.31</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request-item">
+                        <div class="card request-card">
+                            <div class="request-media">
+                                <img class="media-profile my-auto"
+                                     width="48"
+                                     height="48"
+                                     src="https://via.placeholder.com/100x100">
+                                <div class="media-body my-auto">
+                                    <div class="rm-pos">
+                                        <label data-label="checkbox"
+                                               class="checkbox-item">
+                                            <input autocomplete="new-password" data-type="checkbox"
+                                                   type="checkbox"
+                                                   name="light">
+                                            <span class="checkbox"></span>
+                                            <span class="text ml-0"></span>
+                                        </label>
+                                    </div>
+                                    <div class="media-title">
+                                        <span class="title">천명 신년운세 앱 서비스 홍보 영상</span>
+                                        </span>
+                                    </div>
+                                    <div class="media-info">
+                                        <span class="info">기획</span>
+                                        <span class="info">250만원</span>
+                                        <span class="info">2021.12.11~2021.12.31</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caution-wrapper">
+                    <div class="caution-title">
+                        <label data-label="checkbox"
+                               class="checkbox-item">
+                            <input autocomplete="new-password" data-type="checkbox"
+                                   type="checkbox"
+                                   name="light">
+                            <span class="checkbox"></span>
+                            <span class="text">꼭 확인하고 동의해주세요.</span>
+                        </label>
+                    </div>
+                    <div class="caution-list">
+                        <span class="item">‘크리에이터 명’ 승인 시 선정자 목록에서 다른 크리에이터를 선정할 수 없으며  1~3일이내 선급금이 지급됩니다.</span>
+                        <span class="item">선금 지급 완료 후 선정 및 프로젝트 취소 시 계약 금액은 전체 환불되지 않습니다.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-block btn-lg btn-red modal-footer-radius active"
+                        data-dismiss="modal"
+                        aria-label="Close">업무 요청
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chat Modal2-->
+<div class="modal fade"
+     id="exampleModal1"
+     tabindex="-1"
+     data-backdrop="static"
+     data-keyboard="false"
+     aria-labelledby="exampleModalLabel1"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content radius-12">
+            <div class="modal-header">
+                <h5 class="modal-title"
+                    id="exampleModalLabel1">작업 요청</h5>
+                <div class="modal-close"
+                     data-dismiss="modal"
+                     aria-label="Close">
+                    <svg class="m-auto"
+                         width="31"
+                         height="31"
+                         viewBox="0 0 31 31"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6058 13.8517L21.7466 7.71094L23.5007 9.46508L17.36 15.6058L23.5007 21.7466L21.7466 23.5007L15.6058 17.36L9.46508 23.5007L7.71094 21.7466L13.8517 15.6058L7.71094 9.46508L9.46508 7.71094L15.6058 13.8517Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-body work-request-wrapper">
+                <div class="request-item-wrapper height-wrap">
+                    <div class="request-item">
+                        <div class="card request-card">
+                            <div class="request-media">
+                                <img class="media-profile my-auto"
+                                     width="48"
+                                     height="48"
+                                     src="https://via.placeholder.com/100x100">
+                                <div class="media-body my-auto">
+                                    <div class="media-title">
+                                        <span class="title">천명 신년운세 앱 서비스 홍보 영상</span>
+                                        </span>
+                                    </div>
+                                    <div class="media-info">
+                                        <span class="info">기획</span>
+                                        <span class="info">250만원</span>
+                                        <span class="info">2021.12.11~2021.12.31</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caution-wrapper">
+                    <div class="caution-title">
+                        <label data-label="checkbox"
+                               class="checkbox-item">
+                            <input autocomplete="new-password" data-type="checkbox"
+                                   type="checkbox"
+                                   name="light">
+                            <span class="checkbox"></span>
+                            <span class="text">꼭 확인하고 동의해주세요.</span>
+                        </label>
+                    </div>
+                    <div class="caution-list">
+                        <span class="item">작업 승인 시 1~3일 이내 선급금이 지급됩니다.</span>
+                        <span class="item">선금 지급 완료 후 작업 기간 지연 시 계약 금액이 전체 환불/환수될 수 있습니다.</span>
+                        <span class="item">작업 수행 중 의뢰인이 취소 요청한 경우 구공이 요청한 환불 금액을 송금해야합니다.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-block btn-lg btn-red modal-footer-radius active"
+                        data-dismiss="modal"
+                        aria-label="Close">작업 승인
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Chat Modal File 1-->
+<div class="modal fade"
+     id="exampleModal4"
+     tabindex="-1"
+     data-backdrop="static"
+     data-keyboard="false"
+     aria-labelledby="exampleModalLabel4"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content radius-12">
+            <div class="modal-header">
+                <h5 class="modal-title"
+                    id="exampleModalLabel4">결과물 승인 요청</h5>
+                <div class="modal-close"
+                     data-dismiss="modal"
+                     aria-label="Close">
+                    <svg class="m-auto"
+                         width="31"
+                         height="31"
+                         viewBox="0 0 31 31"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6058 13.8517L21.7466 7.71094L23.5007 9.46508L17.36 15.6058L23.5007 21.7466L21.7466 23.5007L15.6058 17.36L9.46508 23.5007L7.71094 21.7466L13.8517 15.6058L7.71094 9.46508L9.46508 7.71094L15.6058 13.8517Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-body work-request-wrapper">
+                <div class="request-output-accept-wrapper">
+                    <div class="custom-file">
+                        <input autocomplete="new-password" type="text"
+                               readonly
+                               placeholder="파일을 업로드해주세요."
+                               class="form-control-plaintext"
+                               id="custom-file-input-1"
+                               data-target="customFile1"
+                               value="최종 결과물.mp4">
+                        <input autocomplete="new-password" type="file"
+                               class="custom-file-input d-none"
+                               id="customFile1">
+                        <div class="rt-pos icon-close">
+                            <svg class="m-auto"
+                                 width="20"
+                                 height="20"
+                                 viewBox="0 0 20 20"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.99865 8.82031L14.1236 4.69531L15.302 5.87365L11.177 9.99865L15.302 14.1236L14.1236 15.302L9.99865 11.177L5.87365 15.302L4.69531 14.1236L8.82031 9.99865L4.69531 5.87365L5.87365 4.69531L9.99865 8.82031Z"
+                                      fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="rt-pos icon-upload"
+                             style="display: none;">
+                            <svg class="m-auto"
+                                 width="16"
+                                 height="16"
+                                 viewBox="0 0 16 16"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.66536 12.6654H13.332V7.9987H14.6654V13.332C14.6654 13.5088 14.5951 13.6784 14.4701 13.8034C14.3451 13.9285 14.1755 13.9987 13.9987 13.9987H1.9987C1.82189 13.9987 1.65232 13.9285 1.52729 13.8034C1.40227 13.6784 1.33203 13.5088 1.33203 13.332V7.9987H2.66536V12.6654ZM9.33203 5.9987V9.9987H6.66536V5.9987H3.33203L7.9987 1.33203L12.6654 5.9987H9.33203Z"
+                                      fill="#ED234B"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="custom-file">
+                        <input autocomplete="new-password" type="text"
+                               readonly
+                               placeholder="파일을 업로드해주세요."
+                               class="form-control-plaintext"
+                               id="custom-file-input-2"
+                               data-target="customFile2">
+                        <input autocomplete="new-password" type="file"
+                               class="custom-file-input d-none"
+                               id="customFile2">
+                        <div class="rt-pos icon-close"
+                             style="display: none;">
+                            <svg class="m-auto"
+                                 width="20"
+                                 height="20"
+                                 viewBox="0 0 20 20"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.99865 8.82031L14.1236 4.69531L15.302 5.87365L11.177 9.99865L15.302 14.1236L14.1236 15.302L9.99865 11.177L5.87365 15.302L4.69531 14.1236L8.82031 9.99865L4.69531 5.87365L5.87365 4.69531L9.99865 8.82031Z"
+                                      fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="rt-pos icon-upload">
+                            <svg class="m-auto"
+                                 width="16"
+                                 height="16"
+                                 viewBox="0 0 16 16"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.66536 12.6654H13.332V7.9987H14.6654V13.332C14.6654 13.5088 14.5951 13.6784 14.4701 13.8034C14.3451 13.9285 14.1755 13.9987 13.9987 13.9987H1.9987C1.82189 13.9987 1.65232 13.9285 1.52729 13.8034C1.40227 13.6784 1.33203 13.5088 1.33203 13.332V7.9987H2.66536V12.6654ZM9.33203 5.9987V9.9987H6.66536V5.9987H3.33203L7.9987 1.33203L12.6654 5.9987H9.33203Z"
+                                      fill="#ED234B"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="caution-wrapper">
+                    <div class="caution-title">
+                        <label data-label="checkbox"
+                               class="checkbox-item">
+                            <input autocomplete="new-password" data-type="checkbox"
+                                   type="checkbox"
+                                   name="light">
+                            <span class="checkbox"></span>
+                            <span class="text">꼭 확인하고 동의해주세요.</span>
+                        </label>
+                    </div>
+                    <div class="caution-list">
+                        <span class="item">잔금 처리는 작업 결과물에 대해서 의뢰인이 승인해야 처리가 됩니다.</span>
+                        <span class="item">구공에서 잔금을 처리하는데 평균 1~3일 정도의 시간이 소요됩니다.</span>
+                        <span class="item">의뢰인이 승인 거절하고 수정을 요청한 경우 결과물 수정 후 재승인을 요청 해야합니다.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-block btn-lg btn-red modal-footer-radius active"
+                        data-dismiss="modal"
+                        aria-label="Close">작업 승인
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chat Modal File 2-->
+<div class="modal fade"
+     id="exampleModal5"
+     tabindex="-1"
+     data-backdrop="static"
+     data-keyboard="false"
+     aria-labelledby="exampleModalLabel5"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content radius-12">
+            <div class="modal-header">
+                <h5 class="modal-title"
+                    id="exampleModalLabel5">결과물 수정</h5>
+                <div class="modal-close"
+                     data-dismiss="modal"
+                     aria-label="Close">
+                    <svg class="m-auto"
+                         width="31"
+                         height="31"
+                         viewBox="0 0 31 31"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6058 13.8517L21.7466 7.71094L23.5007 9.46508L17.36 15.6058L23.5007 21.7466L21.7466 23.5007L15.6058 17.36L9.46508 23.5007L7.71094 21.7466L13.8517 15.6058L7.71094 9.46508L9.46508 7.71094L15.6058 13.8517Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-body work-request-wrapper">
+                <div class="request-output-accept-wrapper">
+                    <div class="custom-file">
+                        <input autocomplete="new-password" type="text"
+                               readonly
+                               placeholder="파일을 업로드해주세요."
+                               class="form-control-plaintext"
+                               id="custom-file-input-3"
+                               data-target="customFile3"
+                               value="최종 결과물.mp4">
+                        <input autocomplete="new-password" type="file"
+                               class="custom-file-input d-none"
+                               id="customFile3">
+                        <div class="rt-pos icon-close">
+                            <svg class="m-auto"
+                                 width="20"
+                                 height="20"
+                                 viewBox="0 0 20 20"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.99865 8.82031L14.1236 4.69531L15.302 5.87365L11.177 9.99865L15.302 14.1236L14.1236 15.302L9.99865 11.177L5.87365 15.302L4.69531 14.1236L8.82031 9.99865L4.69531 5.87365L5.87365 4.69531L9.99865 8.82031Z"
+                                      fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="rt-pos icon-upload"
+                             style="display: none;">
+                            <svg class="m-auto"
+                                 width="16"
+                                 height="16"
+                                 viewBox="0 0 16 16"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.66536 12.6654H13.332V7.9987H14.6654V13.332C14.6654 13.5088 14.5951 13.6784 14.4701 13.8034C14.3451 13.9285 14.1755 13.9987 13.9987 13.9987H1.9987C1.82189 13.9987 1.65232 13.9285 1.52729 13.8034C1.40227 13.6784 1.33203 13.5088 1.33203 13.332V7.9987H2.66536V12.6654ZM9.33203 5.9987V9.9987H6.66536V5.9987H3.33203L7.9987 1.33203L12.6654 5.9987H9.33203Z"
+                                      fill="#ED234B"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="custom-file">
+                        <input autocomplete="new-password" type="text"
+                               readonly
+                               placeholder="파일을 업로드해주세요."
+                               class="form-control-plaintext"
+                               id="custom-file-input-4"
+                               data-target="customFile4">
+                        <input autocomplete="new-password" type="file"
+                               class="custom-file-input d-none"
+                               id="customFile4">
+                        <div class="rt-pos icon-close"
+                             style="display: none;">
+                            <svg class="m-auto"
+                                 width="20"
+                                 height="20"
+                                 viewBox="0 0 20 20"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.99865 8.82031L14.1236 4.69531L15.302 5.87365L11.177 9.99865L15.302 14.1236L14.1236 15.302L9.99865 11.177L5.87365 15.302L4.69531 14.1236L8.82031 9.99865L4.69531 5.87365L5.87365 4.69531L9.99865 8.82031Z"
+                                      fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="rt-pos icon-upload">
+                            <svg class="m-auto"
+                                 width="16"
+                                 height="16"
+                                 viewBox="0 0 16 16"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.66536 12.6654H13.332V7.9987H14.6654V13.332C14.6654 13.5088 14.5951 13.6784 14.4701 13.8034C14.3451 13.9285 14.1755 13.9987 13.9987 13.9987H1.9987C1.82189 13.9987 1.65232 13.9285 1.52729 13.8034C1.40227 13.6784 1.33203 13.5088 1.33203 13.332V7.9987H2.66536V12.6654ZM9.33203 5.9987V9.9987H6.66536V5.9987H3.33203L7.9987 1.33203L12.6654 5.9987H9.33203Z"
+                                      fill="#ED234B"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="caution-wrapper">
+                    <div class="caution-title">
+                        <label data-label="checkbox"
+                               class="checkbox-item">
+                            <input autocomplete="new-password" data-type="checkbox"
+                                   type="checkbox"
+                                   name="light">
+                            <span class="checkbox"></span>
+                            <span class="text">꼭 확인하고 동의해주세요.</span>
+                        </label>
+                    </div>
+                    <div class="caution-list">
+                        <span class="item">잔금 처리는 작업 결과물에 대해서 의뢰인이 승인해야 처리가 됩니다.</span>
+                        <span class="item">구공에서 잔금을 처리하는데 평균 1~3일 정도의 시간이 소요됩니다.</span>
+                        <span class="item">의뢰인이 승인 거절하고 수정을 요청한 경우 결과물 수정 후 재승인을 요청 해야합니다.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-block btn-lg btn-red modal-footer-radius active"
+                        data-dismiss="modal"
+                        aria-label="Close">작업 승인
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chat Modal Request-->
+<div class="modal fade"
+     id="exampleModal6"
+     tabindex="-1"
+     data-backdrop="static"
+     data-keyboard="false"
+     aria-labelledby="exampleModalLabel6"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content radius-12">
+            <div class="modal-header">
+                <h5 class="modal-title"
+                    id="exampleModalLabel6">결과물 수정</h5>
+                <div class="modal-close"
+                     data-dismiss="modal"
+                     aria-label="Close">
+                    <svg class="m-auto"
+                         width="31"
+                         height="31"
+                         viewBox="0 0 31 31"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6058 13.8517L21.7466 7.71094L23.5007 9.46508L17.36 15.6058L23.5007 21.7466L21.7466 23.5007L15.6058 17.36L9.46508 23.5007L7.71094 21.7466L13.8517 15.6058L7.71094 9.46508L9.46508 7.71094L15.6058 13.8517Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-body work-request-wrapper">
+                <div class="update-request-wrapper">
+                    <div class="form-group">
+                        <!-- Textarea Resizing in javascript (Textarea auto resize)-->
+                        <label for="exampleFormControlTextarea1"
+                               class="mb-3">수정 사항</label>
+                        <textarea class="form-control"
+                                  placeholder="수정 내용를 작성해주세요."
+                                  pattern="[a-z]{1,30}(,[a-z]{1,30})*"
+                                  id="exampleFormControlTextarea1"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-block btn-lg btn-red modal-footer-radius active"
+                        data-dismiss="modal"
+                        aria-label="Close">작업 승인
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chat Modal Project Register-->
+<div class="modal fade user-request-modal project-register-modal"
+     id="exampleModal7"
+     tabindex="-1"
+     data-backdrop="static"
+     data-keyboard="false"
+     aria-labelledby="exampleModalLabel7"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content radius-12">
+            <div class="modal-header">
+                <h5 class="modal-title"
+                    id="exampleModalLabel7">프로젝트 간단 정보 작성</h5>
+                <div class="modal-close"
+                     data-dismiss="modal"
+                     aria-label="Close">
+                    <svg class="m-auto"
+                         width="31"
+                         height="31"
+                         viewBox="0 0 31 31"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6058 13.8517L21.7466 7.71094L23.5007 9.46508L17.36 15.6058L23.5007 21.7466L21.7466 23.5007L15.6058 17.36L9.46508 23.5007L7.71094 21.7466L13.8517 15.6058L7.71094 9.46508L9.46508 7.71094L15.6058 13.8517Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-body project-register-wrapper">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group mb-48">
+                            <label class="text-dark-low">프로젝트 제목</label>
+                            <input autocomplete="new-password" type="text"
+                                   placeholder="프로젝트 제목을 입력해주세요."
+                                   class="form-control no-border text-dark-low">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group mb-48">
+                            <label class="text-dark-low">예산</label>
+                            <input autocomplete="new-password" type="text"
+                                   placeholder="예산 금액을 입력해주세요."
+                                   class="form-control no-border text-dark-low">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group mb-48">
+                            <label class="text-dark-low">프로젝트 일정</label>
+                            <input autocomplete="new-password" type="text"
+                                   placeholder="일 단위로 입력해주세요."
+                                   class="form-control no-border text-dark-low">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group mb-48">
+                            <label class="text-dark-low">분량</label>
+                            <input autocomplete="new-password" type="text"
+                                   placeholder="분량를 입력해주세요."
+                                   class="form-control no-border text-dark-low">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group mb-48">
+                            <label class="text-dark-low">편수</label>
+                            <input autocomplete="new-password" type="text"
+                                   placeholder="몇편을 제작할 지 입력해주세요."
+                                   class="form-control no-border text-dark-low">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group mb-48">
+                            <label class="text-dark-low">목적</label>
+                            <input autocomplete="new-password" type="text"
+                                   placeholder="영상 목적을 입력해주세요."
+                                   class="form-control no-border text-dark-low">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group mb-48">
+                            <label class="text-dark-low">세금계산서</label>
+                            <div class="radio-wrapper">
+                                <label data-label="checkbox"
+                                       class="radio-item">
+                                    <input autocomplete="new-password" data-type="radio"
+                                           type="radio"
+                                           name="light"
+                                           checked="">
+                                    <span class="design"></span>
+                                    <span class="text">필요</span>
+                                </label>
+                                <label data-label="checkbox"
+                                       class="radio-item">
+                                    <input autocomplete="new-password" data-type="radio"
+                                           type="radio"
+                                           name="light"
+                                           checked="">
+                                    <span class="design"></span>
+                                    <span class="text">불필요</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row modal-video-wrapper">
+                            <div class="col-12 modal-video-ref-item">
+                                <div class="form-group mb-3">
+                                    <label class="text-dark-low">참고 영상 링크</label>
+                                    <input autocomplete="new-password" type="text"
+                                           placeholder="영상 링크를 입력해주세요."
+                                           class="form-control no-border text-dark-low">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-right">
+                                <button type="button"
+                                        onclick="createModalVideoRefItem($('.modal-video-wrapper'))"
+                                        class="btn btn-sm btn-red btn-border-1">링크 추가
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-block btn-lg btn-red modal-footer-radius active"
+                        data-dismiss="modal"
+                        aria-label="Close">
+                    크리에이터 선정
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.js"
+        crossorigin="anonymous"></script>
+</script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+-->
+<script src="../../../resources/js/theme/theme.js"></script>
+<!-- Animation -->
+<script src="../../../resources/js/animation/animate.js"></script>
+<!-- Owl Carousel -->
+<script src="../../../resources/js/carousel/owl.carousel.js"></script>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/d529fb2138.js"
+        crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        /** Textarea auto resize */
+        let textarea = document.querySelector('#exampleFormControlTextarea1');
+        textarea.addEventListener('input', autoResize, false);
+
+        function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        }
+
+        /** Textarea auto resize End*/
+    });
+
+    const createModalVideoRefItem = ($e) => {
+        let element = `<div class="col-12 modal-video-ref-item">
+                            <div class="form-group mb-3">
+                                <label class="text-dark-low">참고 영상 링크</label>
+                                <input autocomplete="new-password" type="text"
+                                       placeholder="영상 링크를 입력해주세요."
+                                       class="form-control no-border text-dark-low">
+                            </div>
+                        </div>`;
+        $e.append(element);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+          crossorigin="anonymous">
+
+    <!-- Theme-->
+    <link rel="stylesheet"
+          href="../../../resources/css/theme/theme.css">
+
+    <!-- Element -->
+    <link rel="stylesheet"
+          href="../../../resources/css/element/element.css">
+
+    <!-- Animation -->
+    <link rel="stylesheet"
+          href="../../../resources/css/animation/animate.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet"
+          href="../../../resources/css/carousel/owl.carousel.css">
+
+    <!-- Common -->
+    <link rel="stylesheet"
+          href="../../../resources/css/common/common.css">
+
+    <title>Login</title>
+</head>
+<body>
+<!--Message Tab Overlay-->
+<div class="header-message-tab-overlay"
+     style="display: none;"></div>
+<!--Search Tab-->
+<div class="search-tab"
+     style="display: none;">
+    <div class="form-group">
+        <div class="input-group">
+            <input autocomplete="new-password"
+                   type="text"
+                   placeholder="검색어를 입력해주세요."
+                   class="form-control no-border text-dark-low"
+                   id="exampleInput2">
+            <div class="input-group-append"
+                 data-href="../common/search.html">
+                <svg class="m-auto"
+                     width="24"
+                     height="24"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.031 16.617L22.314 20.899L20.899 22.314L16.617 18.031C15.0237 19.3082 13.042 20.0029 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20.0029 13.042 19.3082 15.0237 18.031 16.617ZM16.025 15.875C17.2941 14.5699 18.0029 12.8204 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18C12.8204 18.0029 14.5699 17.2941 15.875 16.025L16.025 15.875Z"
+                          fill="#222222"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="title">인기 검색어</div>
+    <div class="horizontal-list-group wide-list-group popular-search-terms-list-container">
+        <ul class="list-group">
+            <li class="list-group-item"
+                data-href="../common/search.html">
+                <span class="order text-red">1.</span><span>An item</span>
+            </li>
+            <li class="list-group-item"
+                data-href="../common/search.html">
+                <span class="order text-red">2.</span><span>A second item</span>
+            </li>
+            <li class="list-group-item"
+                data-href="../common/search.html">
+                <span class="order text-red">3.</span><span>A third item</span>
+            </li>
+            <li class="list-group-item"
+                data-href="../common/search.html">
+                <span class="order text-red">4.</span><span>A fourth item</span>
+            </li>
+        </ul>
+        <ul class="list-group">
+            <li class="list-group-item"
+                data-href="../common/search.html">
+                <span class="order text-red">1.</span><span>An item</span>
+            </li>
+            <li class="list-group-item"
+                data-href="../common/search.html">
+                <span class="order text-red">2.</span><span>A second item</span>
+            </li>
+            <li class="list-group-item"
+                data-href="../common/search.html">
+                <span class="order text-red">3.</span><span>A third item</span>
+            </li>
+            <li class="list-group-item"
+                data-href="../common/search.html">
+                <span class="order text-red">4.</span><span>A fourth item</span>
+            </li>
+        </ul>
+    </div>
+    <div class="title">추천 검색어</div>
+    <div class="recommend-search-word-wrapper">
+        <span data-href="../common/search.html">추천 검색어 1</span>
+        <span data-href="../common/search.html">추천 2</span>
+        <span data-href="../common/search.html">추천 검색 3</span>
+        <span data-href="../common/search.html">추천 검색어</span>
+        <span data-href="../common/search.html">검색어 5</span>
+        <span data-href="../common/search.html">추천검색 6</span>
+        <span data-href="../common/search.html">추천 검색어 7</span>
+    </div>
+</div>
+<header id="header">
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand"
+               href="../common/main.html">
+                <svg width="127"
+                     height="31"
+                     viewBox="0 0 127 31"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.8327 24.1536C20.2867 24.1536 21.9988 22.413 21.9988 19.9181V10.3738H11.6121V15.6536H16.2919V18.9318H6.30464V6.08024H16.2919V8.31403H21.9988V5.09389C21.9988 2.59901 20.2867 0.858398 17.8327 0.858398H4.76375C2.30975 0.858398 0.597656 2.59901 0.597656 5.09389V19.9181C0.597656 22.413 2.30975 24.1536 4.76375 24.1536H13.6666L16.2919 20.4403V24.1536H17.8327ZM37.8233 24.1536C40.2202 24.1536 41.9323 22.471 41.9323 20.0342V6.08024H36.3395V19.0478H30.3186V6.08024H24.7258V20.0342C24.7258 22.471 26.4378 24.1536 28.8348 24.1536H37.8233ZM62.1956 24.1536C64.6496 24.1536 66.3617 22.413 66.3617 19.9181V10.3738H55.975V15.6536H60.6548V18.9318H50.6675V6.08024H60.6548V8.31403H66.3617V5.09389C66.3617 2.59901 64.6496 0.858398 62.1956 0.858398H49.1266C46.6726 0.858398 44.9605 2.59901 44.9605 5.09389V19.9181C44.9605 22.413 46.6726 24.1536 49.1266 24.1536H58.0295L60.6548 20.4403V24.1536H62.1956ZM82.1291 24.1536C84.526 24.1536 86.2381 22.471 86.2381 20.0342V10.1417C86.2381 7.70482 84.526 6.08024 82.1291 6.08024H73.1406C70.7437 6.08024 69.0316 7.70482 69.0316 10.1417V20.0342C69.0316 22.471 70.7437 24.1536 73.1406 24.1536H82.1291ZM80.6453 19.0478H74.6244V11.186H80.6453V19.0478ZM106.418 24.1536V10.1417C106.418 7.70482 104.706 6.08024 102.309 6.08024H89.2119V24.1536H94.8048V11.186H100.826V24.1536H106.418ZM122.312 30.5359C124.709 30.5359 126.421 28.8533 126.421 26.4164V10.1417C126.421 7.70482 124.709 6.08024 122.312 6.08024H113.323C110.927 6.08024 109.214 7.70482 109.214 10.1417V18.5837C109.214 21.0205 110.641 22.413 113.038 22.413H120.828V25.5461H115.092V23.5734H109.5V26.4164C109.5 28.8533 111.212 30.5359 113.608 30.5359H122.312ZM120.828 17.7134H114.807V11.07H120.828V17.7134Z"
+                          fill="white"/>
+                </svg>
+            </a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarsExample04"
+                    aria-controls="navbarsExample04"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse"
+                 id="navbarsExample04">
+                <ul class="navbar-nav left-navbar-nav mr-auto">
+                    <li class="nav-item active new">
+                        <a class="nav-link"
+                           href="../project/projects.html">프로젝트</a>
+                        <div class="new-icon">
+                            <span class="text-white">N</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="../creator/creators.html">크리에이터</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="../portfolio/portfolios.html">프트폴리오</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#">이용안내</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav right-navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white"
+                           href="../auth/login.html">프로젝트 등록 요청</a>
+                    </li>
+                    <li class="nav-item"
+                        data-type="divide">
+                        <a class="nav-link text-white"
+                           href="../auth/login-divide.html">크리에이터 가입</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="search"
+                           class="nav-link right-icon">
+                            <svg width="24"
+                                 height="24"
+                                 viewBox="0 0 24 24"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.031 16.617L22.314 20.899L20.899 22.314L16.617 18.031C15.0237 19.3082 13.042 20.0029 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20.0029 13.042 19.3082 15.0237 18.031 16.617ZM16.025 15.875C17.2941 14.5699 18.0029 12.8204 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18C12.8204 18.0029 14.5699 17.2941 15.875 16.025L16.025 15.875Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white"
+                           href="../auth/login.html">로그인</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="floating-wrapper">
+    <img class="img-fluid"
+         src="../../../resources/assets/images/icon/logo/gugong-image.png"/>
+    <div class="comment-wrapper">
+        <div class="comment">도움이 필요하신가요?</div>
+        <div class="ponytail"></div>
+    </div>
+</div>
+<div class="container p-section-120">
+    <div class="row">
+        <div class="col-12">
+            <div class="login-wrapper offset-xl-3 col-xl-6 offset-lg-3 col-lg-6 offset-md-2 col-md-8 offset-sm-1 col-sm-10 col-12">
+                <div class="logo-wrapper">
+                    <img src="../../../resources/assets/images/icon/logo/logo-red.svg"/>
+                </div>
+                <form>
+                    <div class="form-group-inner">
+                        <div class="form-group">
+                            <label class="text-dark-low"
+                                   for="exampleInput0">이메일(ID)</label>
+                            <input autocomplete="new-password"
+                                   type="text"
+                                   placeholder="GuGong@example.com"
+                                   class="form-control no-border text-dark-low"
+                                   id="exampleInput0">
+                            <small id="emailHelp"
+                                   style="display: none;"
+                                   class="form-text text-red">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label class="text-dark-low"
+                                   for="exampleInput1">비밀번호(8자리 이상, 영문+숫자+특수문자 조합)</label>
+                            <input autocomplete="new-password"
+                                   type="password"
+                                   placeholder="크리에이터 명을 입력해주세요."
+                                   class="form-control no-border text-dark-low"
+                                   id="exampleInput1">
+                            <small id="emailHelp1"
+                                   style="display: none;"
+                                   class="form-text text-red">We'll never share your email with anyone
+                                                              else.</small>
+                        </div>
+                    </div>
+                    <div class="find-inner">
+                        <label data-href="../auth/find.html"
+                               class="label-lg font-weight-medium">아이디/비밀번호 찾기</label>
+                    </div>
+                    <div class="btn-inner">
+                        <button type="button"
+                                data-href="../common/main-other-header.html"
+                                class="btn btn-block btn-lg btn-red btn-border-1">로그인
+                        </button>
+                        <div class="not-text text-red">
+                            아직 회원이 아니신가요?
+                        </div>
+                        <button type="button"
+                                data-href="../common/main-other-header.html"
+                                class="btn btn-block btn-lg btn-kakao icon white font-16 mb-24">
+                            <svg width="30"
+                                 height="30"
+                                 viewBox="0 0 36 36"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 4.5C26.6985 4.5 33.75 9.996 33.75 16.7775C33.75 23.5575 26.6985 29.0535 18 29.0535C17.1339 29.054 16.2686 28.9988 15.4095 28.8885L8.7975 33.213C8.046 33.6105 7.7805 33.567 8.0895 32.5935L9.4275 27.0765C5.1075 24.8865 2.25 21.0915 2.25 16.7775C2.25 9.9975 9.3015 4.5 18 4.5ZM26.8605 16.59L29.0655 14.454C29.1927 14.3219 29.2637 14.1455 29.2635 13.9621C29.2633 13.7786 29.1919 13.6024 29.0643 13.4706C28.9368 13.3388 28.763 13.2616 28.5797 13.2553C28.3964 13.2491 28.2178 13.3142 28.0815 13.437L25.1895 16.236V13.923C25.1895 13.7352 25.1149 13.5551 24.9821 13.4224C24.8494 13.2896 24.6693 13.215 24.4815 13.215C24.2937 13.215 24.1136 13.2896 23.9809 13.4224C23.8481 13.5551 23.7735 13.7352 23.7735 13.923V17.7585C23.747 17.8679 23.747 17.9821 23.7735 18.0915V20.25C23.7735 20.4378 23.8481 20.6179 23.9809 20.7506C24.1136 20.8834 24.2937 20.958 24.4815 20.958C24.6693 20.958 24.8494 20.8834 24.9821 20.7506C25.1149 20.6179 25.1895 20.4378 25.1895 20.25V18.2055L25.83 17.586L27.972 20.6355C28.0255 20.7116 28.0934 20.7765 28.172 20.8264C28.2505 20.8762 28.3381 20.9101 28.4298 20.9262C28.5214 20.9422 28.6153 20.94 28.7061 20.9197C28.7969 20.8994 28.8829 20.8615 28.959 20.808C29.0351 20.7545 29.1 20.6866 29.1499 20.608C29.1997 20.5295 29.2336 20.4419 29.2497 20.3502C29.2657 20.2586 29.2635 20.1647 29.2432 20.0739C29.2229 19.9831 29.185 19.8971 29.1315 19.821L26.8605 16.5885V16.59ZM22.4235 19.476H20.2335V13.9455C20.2251 13.7636 20.1469 13.5918 20.0152 13.4661C19.8835 13.3403 19.7084 13.2701 19.5262 13.2701C19.3441 13.2701 19.169 13.3403 19.0373 13.4661C18.9056 13.5918 18.8274 13.7636 18.819 13.9455V20.184C18.819 20.574 19.134 20.892 19.5255 20.892H22.4235C22.6113 20.892 22.7914 20.8174 22.9241 20.6846C23.0569 20.5519 23.1315 20.3718 23.1315 20.184C23.1315 19.9962 23.0569 19.8161 22.9241 19.6834C22.7914 19.5506 22.6113 19.476 22.4235 19.476ZM13.638 17.838L14.682 15.2775L15.639 17.838H13.638ZM17.4225 18.57L17.4255 18.546C17.4251 18.3676 17.3571 18.1961 17.235 18.066L15.666 13.866C15.6002 13.6659 15.4749 13.4905 15.3069 13.3635C15.1388 13.2364 14.936 13.1637 14.7255 13.155C14.5135 13.1541 14.3062 13.2177 14.1312 13.3375C13.9562 13.4573 13.8219 13.6275 13.746 13.8255L11.2545 19.938C11.2193 20.0241 11.2015 20.1162 11.2019 20.2092C11.2024 20.3022 11.2212 20.3942 11.2572 20.4799C11.2932 20.5657 11.3457 20.6435 11.4118 20.7089C11.4779 20.7743 11.5562 20.8261 11.6423 20.8612C11.7283 20.8964 11.8205 20.9143 11.9135 20.9138C12.0065 20.9134 12.0984 20.8946 12.1842 20.8586C12.2699 20.8226 12.3477 20.77 12.4131 20.704C12.4786 20.6379 12.5303 20.5596 12.5655 20.4735L13.0605 19.254H16.1655L16.614 20.454C16.6445 20.5437 16.6927 20.6264 16.7557 20.6971C16.8187 20.7678 16.8953 20.8252 16.9809 20.8658C17.0665 20.9064 17.1594 20.9294 17.254 20.9335C17.3487 20.9375 17.4432 20.9225 17.5319 20.8894C17.6207 20.8563 17.7019 20.8057 17.7707 20.7406C17.8396 20.6755 17.8947 20.5973 17.9327 20.5105C17.9708 20.4237 17.991 20.3302 17.9923 20.2355C17.9935 20.1408 17.9757 20.0467 17.94 19.959L17.4225 18.57ZM12.4395 13.953C12.4395 13.7655 12.3651 13.5856 12.2327 13.4529C12.1002 13.3202 11.9205 13.2454 11.733 13.245H6.8655C6.67773 13.245 6.49764 13.3196 6.36487 13.4524C6.23209 13.5851 6.1575 13.7652 6.1575 13.953C6.1575 14.1408 6.23209 14.3209 6.36487 14.4536C6.49764 14.5864 6.67773 14.661 6.8655 14.661H8.6055V20.265C8.6055 20.4528 8.68009 20.6329 8.81287 20.7656C8.94564 20.8984 9.12573 20.973 9.3135 20.973C9.50127 20.973 9.68136 20.8984 9.81413 20.7656C9.94691 20.6329 10.0215 20.4528 10.0215 20.265V14.661H11.7315C11.9193 14.661 12.0994 14.5864 12.2321 14.4536C12.3649 14.3209 12.4395 14.1408 12.4395 13.953Z"
+                                      fill="#191600"/>
+                            </svg>
+                            카카오로 1초 만에 시작하기
+                        </button>
+                        <button type="button"
+                                data-href="../auth/login-divide.html"
+                                class="btn btn-block btn-lg btn-op-red icon white font-16">
+                            <svg width="30"
+                                 height="24"
+                                 viewBox="0 0 30 24"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.3333 22.676C29.3309 23.0262 29.1908 23.3613 28.9433 23.609C28.6958 23.8568 28.3608 23.9972 28.0107 24H3.98933C3.63842 23.9996 3.302 23.86 3.05399 23.6117C2.80598 23.3635 2.66667 23.0269 2.66667 22.676V21.3333H26.6667V5.73333L16 15.3333L2.66667 3.33333V1.33333C2.66667 0.979711 2.80714 0.640573 3.05719 0.390524C3.30724 0.140476 3.64638 0 4 0H28C28.3536 0 28.6928 0.140476 28.9428 0.390524C29.1929 0.640573 29.3333 0.979711 29.3333 1.33333V22.676ZM5.912 2.66667L16 11.7467L26.088 2.66667H5.912ZM0 16H10.6667V18.6667H0V16ZM0 9.33333H6.66667V12H0V9.33333Z"
+                                      fill="#ED234B"></path>
+                            </svg>
+                            이메일로 1분 만에 시작하기
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="sub-footer"
+     class="container-fluid bg-gray-f2">
+    <div class="pl-0 pr-0 container">
+        <ul class="horizontal-menu list-unstyled">
+            <li>
+                <a href="#sub-footer">회사 소개</a>
+            </li>
+            <li>
+                <a href="#sub-footer">서비스 이용약관</a>
+            </li>
+            <li>
+                <a href="#sub-footer">개인정보처리방침</a>
+            </li>
+            <li>
+                <a href="#sub-footer">공지사항</a>
+            </li>
+            <li>
+                <a href="#sub-footer">자주 묻는 질문</a>
+            </li>
+            <li>
+                <a href="#sub-footer">제휴 및 협력 문의</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<footer id="footer"
+        class="container-fluid bg-dark">
+    <div class="pl-0 pr-0 container">
+        <div class="row">
+            <div class="col-5 logo-container">
+                <div class="d-flex">
+                    <span class="footer-sub-logo">
+                        <a href="../common/main.html">
+                            <img src="../../../resources/assets/images/icon/logo/footer-sub-logo.svg"/>
+                        </a>
+                    </span>
+                    <a class="mt-auto mb-auto ml-2"
+                       href="../common/main.html">
+                        <img class="d-inline-block mt-1"
+                             src="../../../resources/assets/images/icon/logo/logo-white.svg"/>
+                    </a>
+                </div>
+                <div class="d-block logo-text text-white">
+                    <span>영상 제작을 크리에이터와 연결하다.</span>
+                </div>
+                <div class="info-container">
+                    <ul class="service-info list-unstyled">
+                        <li>주식회사 위아트 | 대표 이성진</li>
+                        <li>세종특별자치시 한누리대로 312, 노블비즈니스타운 718호</li>
+                        <li>연락처: 070-4906-1022</li>
+                        <li>사업자등록번호 : 714-86-02038</li>
+                        <li>Copyrights ⓒ 2020 Weart INC. ALL RIGHTS RESERVED.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="row">
+                    <div class="ml-auto col-2">
+                        <span class="menu-title text-white">프로젝트</span>
+                        <ul class="list-unstyled menu-list">
+                            <li><a href="../project/projects.html">프로젝트 공고</a></li>
+                            <li><a href="../auth/login.html">프로젝트 등록</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <span class="menu-title text-white">크리에이터</span>
+                        <ul class="list-unstyled menu-list">
+                            <li><a href="#footer">개인</a></li>
+                            <li><a href="#footer">기업</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <span class="menu-title text-white">포트폴리오</span>
+                        <ul class="list-unstyled menu-list">
+                            <li><a href="../portfolio/portfolios.html">광고 홍보</a></li>
+                            <li><a href="../portfolio/portfolios.html">유튜브 제작</a></li>
+                            <li><a href="../portfolio/portfolios.html">교육 튜토리얼</a></li>
+                            <li><a href="../portfolio/portfolios.html">행사</a></li>
+                            <li><a href="../portfolio/portfolios.html">인터뷰 행사</a></li>
+                            <li><a href="../portfolio/portfolios.html">기타</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5">
+                        <span class="menu-title text-white">고객센터</span>
+                        <ul class="list-unstyled menu-list">
+                            <li><a>영업 시간</a></li>
+                            <li><a>평일 10:00 ~ 18:00(주말 및 공휴일 휴무)</a></li>
+                            <li class="btn-menu">
+                                <button type="button"
+                                        class="btn btn-sm btn-red active">1:1 문의하기
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.js"
+        crossorigin="anonymous"></script>
+</script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+-->
+<script src="../../../resources/js/theme/theme.js"></script>
+<!-- Animation -->
+<script src="../../../resources/js/animation/animate.js"></script>
+<!-- Owl Carousel -->
+<script src="../../../resources/js/carousel/owl.carousel.js"></script>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/d529fb2138.js"
+        crossorigin="anonymous"></script>
+</body>
+</html>
